@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @await Html.PartialAsync("_Navbar")
+    <div class="content">
+        @RenderBody()
+    </div>
+    <partial name="_Footer"/>
+
+    @await RenderSectionAsync("Scripts",false)
+</body>
+</html>

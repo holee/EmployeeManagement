@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "FMlnr4lr6EYHsxcQyJ0eSrsc8izVcAevZQyIVc/HSwA=",
+  "Source": "EmployeeManagement",
+  "BasePath": "_content/EmployeeManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EmployeeManagement\\wwwroot",
+      "Source": "EmployeeManagement",
+      "ContentRoot": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\Index.html",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "Index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    }
+  ]
+}
