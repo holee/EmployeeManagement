@@ -10,12 +10,12 @@ builder.Services.AddControllersWithViews();
 //Adding Middleware
 var app = builder.Build();
 app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider=new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath,"Example")),
-    RequestPath="/Example/Ex"
-});
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    FileProvider=new PhysicalFileProvider(
+//        Path.Combine(builder.Environment.ContentRootPath,"Example")),
+//    RequestPath="/Example/Ex"
+//});
 
 
 //app.MapDefaultControllerRoute();

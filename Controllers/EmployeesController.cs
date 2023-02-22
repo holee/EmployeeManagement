@@ -5,22 +5,11 @@ namespace EmployeeManagement.Controllers
 {
     public class EmployeesController : Controller
     {
-        [ActionName("List")]
         [HttpGet]
         public IActionResult Index()
         {
-            //using view bag
-            ViewBag.MyName = "Vanthy";
-            ViewBag.Names = new[] { "Vanthy","Kosol","Theara","Ly An" };
-            ViewBag.Employee = new Employee { Name = "Sreynou", Id = 1 };
-            //Using ViewData
-            ViewData["Name"] = "Ry Mang";
-            ViewData["newNames"] = new[] { "Vanthy", "Kosol", "Theara", "Ly An" };
-            ViewData["Emp"] = new Employee { Name = "Sok Pisey", Id = 2 };
-
-
-
-            return View("Index");
+            var emp=new Employee { FirstName="Data",LastName="Data"};
+            return View(emp);
         }
         [NonAction] 
         public ActionResult Dialog() 

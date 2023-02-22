@@ -1,40 +1,9 @@
-﻿@DateTime.Now.Day
-@("Hello world")
-<h2>My Name:@ViewBag.MyName</h2>
-<h2>Names</h2>
-@foreach (var item in ViewBag.Names)
-{
-    <li>@item</li>
+﻿@model Employee
+
+@{
+
+    ViewBag.Title = "Index";
+
 }
-<h2>EMployee</h2>
-<li>@ViewBag.Employee.Id</li>
-<li>@ViewBag.Employee.Name</li>
-<fieldset>
-    <legend>Using View Data</legend>
-    <div>
-        <h2>@ViewData["Name"]</h2>
-        @{
-            var names = (string[]?)ViewData["newNames"];
-            var weekDay = DateTime.Now.DayOfWeek;
-            <h1>@weekDay</h1>
-            int x = 10;
-        }
-        @foreach (var item in names ?? Enumerable.Empty<string>())
-        {
-            <h4>@item</h4>
-        }
 
-        <p>
-            @(((Employee?)ViewData["Emp"])?.Id) <br />
-            @(((Employee?)ViewData["Emp"])?.Name) <br />
-        </p>
-
-    </div>
-</fieldset>
-
-
-@section Scripts{
-    <script>
-
-    </script>
-}
+@Model

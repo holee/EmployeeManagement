@@ -1,8 +1,480 @@
 {
   "Files": [
     {
-      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\Index.html",
-      "PackagePath": "staticwebassets\\Index.html"
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\all.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\all.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\brands.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\regular.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\solid.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\fonts\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\all.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\all.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\brands.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\regular.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\solid.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\fonts\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\fonts\\sprites\\brands.svg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\sprites\\regular.svg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\fonts\\sprites\\solid.svg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\fonts\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\fonts\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\lte\\css\\adminlte.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.components.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.components.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.components.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.components.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.components.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.components.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.components.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.components.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.core.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.core.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.core.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.core.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.core.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.core.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.core.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.core.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.extra-components.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.extra-components.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.extra-components.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.extra-components.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.extra-components.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.extra-components.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.extra-components.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.extra-components.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.light.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.light.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.light.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.light.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.light.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.light.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.light.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.light.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.pages.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.pages.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.pages.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.pages.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.pages.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.pages.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.pages.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.pages.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.plugins.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.plugins.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.plugins.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.plugins.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.plugins.min.css",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.plugins.min.css"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\alt\\adminlte.plugins.min.css.map",
+      "PackagePath": "staticwebassets\\lte\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\lte\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\lte\\img\\avatar.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\lte\\img\\avatar2.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\lte\\img\\avatar3.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\avatar4.png",
+      "PackagePath": "staticwebassets\\lte\\img\\avatar4.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\lte\\img\\avatar5.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\lte\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\lte\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\default-150x150.png",
+      "PackagePath": "staticwebassets\\lte\\img\\default-150x150.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\icons.png",
+      "PackagePath": "staticwebassets\\lte\\img\\icons.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\lte\\img\\photo1.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\lte\\img\\photo2.png"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\photo3.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\photo4.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\prod-1.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\prod-2.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\prod-2.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\prod-3.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\prod-3.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\prod-4.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\prod-4.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\prod-5.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\prod-5.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\lte\\img\\user8-128x128.jpg"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\lte\\js\\adminlte.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\lte\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\lte\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\lte\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\demo.js",
+      "PackagePath": "staticwebassets\\lte\\js\\demo.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\demo.min.js",
+      "PackagePath": "staticwebassets\\lte\\js\\demo.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard.min.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard2.min.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard2.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard3.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard3.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\js\\pages\\dashboard3.min.js",
+      "PackagePath": "staticwebassets\\lte\\js\\pages\\dashboard3.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EmployeeManagement.Microsoft.AspNetCore.StaticWebAssets.props",
