@@ -15,39 +15,61 @@ namespace EmployeeManagement.Controllers
             var deps = GetAllDepartments();
             return View(deps);
         }
-
-
-
-
-
-
-
-
-
-
-
-
         public IActionResult Details(int id)
         {
             var dep = GetDepartment(id);
             return View(dep);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Department dep)
+        {
+            if (ModelState.IsValid)
+            {
+                if (CreateDeparment(dep))
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(dep);
+            }
+            return View(dep);
+
+        }
+
+
+        public IActionResult Edit(int id)
+        {
+            var dep = GetDepartment(id);
+            return View(dep);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id,Department dep)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                if (UpdateDeparment(id, dep)) return RedirectToAction("Index");
+                return View(dep);
+            }
+            return View(dep);
+
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            if (DeleteDeparment(id)) return RedirectToAction("Index");
+            return BadRequest();
+        }
 
 
 
@@ -85,6 +107,57 @@ namespace EmployeeManagement.Controllers
                                         .FirstOrDefault();
             return dep;
     
+        }
+
+        private bool CreateDeparment(Department dep)
+        {
+            using (var conn = new SqlConnection(conString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(@"INSERT INTO Department(Name,Description)
+                                                VALUES(@name,@dep)", conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@name", dep.Name);
+                    cmd.Parameters.AddWithValue("@dep", dep.Description);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        private bool UpdateDeparment(int id,Department dep)
+        {
+            var dp = GetDepartment(id);
+            if (dp == null) return false;
+            using (var conn = new SqlConnection(conString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(@"UPDATE Department SET Name=@name,
+                                                Description=@desc WHERE id=@id", conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@id",id);
+                    cmd.Parameters.AddWithValue("@name", dep.Name);
+                    cmd.Parameters.AddWithValue("@desc", dep.Description);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        private bool DeleteDeparment(int id)
+        {
+            var dp = GetDepartment(id);
+            if (dp == null) return false;
+            using (var conn = new SqlConnection(conString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(@"DELETE FROM Department WHERE id=@id", conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@id", id);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
         }
 
     }
