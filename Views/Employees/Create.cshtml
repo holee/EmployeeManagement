@@ -1,5 +1,32 @@
-﻿
+﻿@model Employee
 
-    <form>
-
+    <form asp-action="Create" asp-controller="Employees">
+        <div class="mb-2">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" />
+            <select asp-for="DepartmetId"
+                    asp-items="@(new SelectList(new[]{ "IT","Account","Marketing" }))">
+                <option value="">----Select department---</option>
+            </select>
+        <select asp-for="DepartmetId"
+                asp-items="@Html.GetEnumSelectList<Dep>()">
+            <option value="">----Select department---</option>
+        </select>
+        <select asp-for="DepartmetId"
+                asp-items="@(new SelectList(Enum.GetValues<Dep>()))">
+            <option value="">----Select department---</option>
+        </select>
+        <select asp-for="DepartmetId"
+                asp-items="@ViewBag.deps">
+            <option value="">----Select department---</option>
+        </select>
+        <select asp-for="DepartmetId"
+                asp-items="@ViewBag.depss">
+            <option value="">----Select department---</option>
+        </select>
+        </div>
+        <div class="mb-2">
+            <label asp-for="LastName"></label>
+            <textarea asp-for="LastName" style="resize:none;"  class="form-control"></textarea>
+        </div>
     </form>

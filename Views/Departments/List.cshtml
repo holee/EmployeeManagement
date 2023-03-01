@@ -1,0 +1,54 @@
+﻿@model DataTable
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow item in Model.Rows)
+        {
+            <tr>
+                <td>
+                    @(item.Field<int>("id"))
+                </td>
+                <td>
+                    @(item.Field<string>("Name"))
+                </td>
+                <td>
+                    @(item.Field<string>("Description"))
+                </td>
+                <td>
+                 <a asp-action="Edit" asp-controller="Departments"
+                   asp-area=""
+                   asp-route-id="@(item.Field<int>("id"))">
+                        Edit
+                    </a>
+                <a asp-action="Details" asp-controller="Departments"
+                   asp-area=""
+                   asp-route-id="@(item.Field<int>("id"))">
+                        Details
+                    </a>
+                <a asp-action="Delete" asp-controller="Departments"
+                   asp-area=""
+                   asp-route-id="@(item.Field<int>("id"))">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

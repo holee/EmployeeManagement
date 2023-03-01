@@ -1,5 +1,15 @@
 ﻿namespace EmployeeManagement.Models
 {
+
+    public enum Dep
+    {
+        IT,
+        Account,
+        Marketing,
+        Administrator,
+        Consultant
+    }
+
     public class Employee
     {
         public int EmpId { get; set; }

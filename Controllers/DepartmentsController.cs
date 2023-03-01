@@ -15,6 +15,13 @@ namespace EmployeeManagement.Controllers
             var deps = GetAllDepartments();
             return View(deps);
         }
+
+        [HttpGet]
+        public IActionResult List()
+        {
+            var deps = GetAllDepartmentAsDt();
+            return View(deps);
+        }
         public IActionResult Details(int id)
         {
             var dep = GetDepartment(id);
@@ -100,6 +107,24 @@ namespace EmployeeManagement.Controllers
                 return deps ?? default;
             }
         }
+
+        private DataTable GetAllDepartmentAsDt() 
+        {
+            using (var conn = new SqlConnection(conString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand("SELECT * FROM Department;", conn))
+                {
+                    DataTable dt = new DataTable();
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataAdapter dap = new SqlDataAdapter(cmd);
+                    dap.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+
+
         private Department GetDepartment(int id)
         {
             Department dep = new();
