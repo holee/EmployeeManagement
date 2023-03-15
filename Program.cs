@@ -1,3 +1,4 @@
+using EmployeeManagement.Data;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 //Adding Services
 
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<DapperContext>();
 
 //Adding Middleware
 var app = builder.Build();
