@@ -21,5 +21,10 @@ namespace EmployeeManagement.Models
         public string Password { get; set; } = default!;
 
 
+
+
+
+
+
     }
 }
