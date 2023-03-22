@@ -185,6 +185,14 @@
       "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
     },
     {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\jquery\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\jquery\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.validate.unobtrusive.min.js"
+    },
+    {
       "Id": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\lte\\css\\adminlte.css"
     },

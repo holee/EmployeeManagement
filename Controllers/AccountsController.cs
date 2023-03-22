@@ -15,6 +15,13 @@ namespace EmployeeManagement.Controllers
             _dContext = dContext;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
+
         public IActionResult Login()  
         {
             return View();
@@ -42,7 +49,26 @@ namespace EmployeeManagement.Controllers
         [ActionName("Create")]
         public async Task<IActionResult> CreateUser(RegisterDto model)
         {
-            var sql = "INSERT INTO [Accounts] VALUES(@id,@username,@email,@password)";
+            //username must has value
+            //username has  3 character at least
+            //username not exceed 100 characters
+            if (string.IsNullOrEmpty(model.UserName))
+            {
+                ModelState.AddModelError(nameof(model.UserName), "please enter your username");
+            }
+            if(model.UserName !=null && model.UserName.Length < 3)
+            {
+                ModelState.AddModelError(nameof(model.UserName), "username has at least 3 characters.");
+            }
+            if (model.UserName != null && model.UserName.Length >100)
+            {
+                ModelState.AddModelError("", "username has only 100 characters.");
+            }
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var sql = "INSERT INTO [Users] VALUES(@id,@username,@email,@password)";
             model.Id = Guid.NewGuid();
             await _dContext.Connection.ExecuteAsync(sql, model);
             return View("Create");
@@ -55,6 +81,24 @@ namespace EmployeeManagement.Controllers
             model.Id = Guid.NewGuid();
             _dContext.Connection.Execute(sql, model);
             return View("Create");
+        }
+
+
+
+        public JsonResult CheckUserName(string userName)
+        {
+            var user = _dContext.Connection.Query<RegisterDto>("SELECT * FROM users WHERE username=@username",
+                                                            new
+                                                            {
+                                                                @username = userName
+                                                            }).FirstOrDefault();
+            if(user != null)
+            {
+                return Json(data:false);
+            }
+
+            return Json(data: true);
+
         }
 
 

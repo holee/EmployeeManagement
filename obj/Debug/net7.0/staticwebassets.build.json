@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ERwoYqsdm38txKwH8OKw9LzWkViJaogSXuAR6So9smE=",
+  "Hash": "usZSe8zN53DdyK8kboHeoVxVvIlIMtZFxl0RTinagMY=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -797,6 +797,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
+    },
+    {
+      "Identity": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\jquery\\jquery.validate.min.js",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "jquery/jquery.validate.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\jquery\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "jquery/jquery.validate.unobtrusive.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery\\jquery.validate.unobtrusive.min.js"
     },
     {
       "Identity": "D:\\KhDev\\BBUP18B202\\EmployeeManagement\\wwwroot\\lte\\css\\adminlte.css",

@@ -1,4 +1,5 @@
-﻿using NuGet.Protocol.Core.Types;
+﻿using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol.Core.Types;
 using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeManagement.Models
@@ -7,18 +8,27 @@ namespace EmployeeManagement.Models
     {
 
         [Key]
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
+        [Remote("CheckUserName", "Accounts",ErrorMessage ="this username already in used.")]
+        public string UserName { get; set; } = string.Empty;
 
-        [StringLength(100)]
-        public string UserName { get; set; } = default!;
-
-        [StringLength(100)]
+        [Required(ErrorMessage ="Please enter your email address.")]
+        [StringLength(100,MinimumLength =5,ErrorMessage ="UserName at least 5 character,but not exceed 100 characters.")]
         [EmailAddress]
-        public string Email { get; set; } = default!;
+        public string Email { get; set; } = string.Empty;
 
-        [StringLength(60)]
+
+        [Required]
         [DataType(DataType.Password)]
-        public string Password { get; set; } = default!;
+        [MinLength(3)]
+        public string Password { get; set; } = string.Empty;
+
+
+        [Required]
+        [DataType(DataType.Password)]
+        [MinLength(3)]
+        [Compare("Password",ErrorMessage ="Password is not match.")]
+        public string ConfirmPassword { get; set; } = string.Empty;
 
 
 
