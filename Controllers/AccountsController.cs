@@ -1,7 +1,10 @@
 ﻿using Dapper;
 using EmployeeManagement.Data;
 using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace EmployeeManagement.Controllers
 {
@@ -25,6 +28,39 @@ namespace EmployeeManagement.Controllers
         public IActionResult Login()  
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _dContext.Connection.QuerySingle<RegisterDto>("SELECT * FROM users WHERE UserName=@username",
+                    new
+                    {
+                        @username = model.UserName
+                    });
+
+                if (user != null)
+                {
+                    var claims = new List<Claim>{
+                            new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
+                            new Claim(ClaimTypes.Name,user.UserName),
+                            new Claim(ClaimTypes.Email,user.Email)
+                        };
+
+                    var claimIdenities = new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
+                    var claimPrinciple = new ClaimsPrincipal(claimIdenities);
+                    await HttpContext.SignInAsync(claimPrinciple, new AuthenticationProperties
+                    {
+                        IsPersistent = model.RememberMe
+                    });
+
+                    return Redirect("/Employees/Index");
+
+                }
+                return View(model);
+            }
+            return View(model);
         }
 
         [HttpPost]

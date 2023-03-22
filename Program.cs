@@ -1,4 +1,5 @@
 using EmployeeManagement.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<DapperContext>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Accounts/Login";
+                    options.LogoutPath = "/Accounts/Logout";
+                    options.ReturnUrlParameter = "ReturnUrl";
+                    options.AccessDeniedPath = "/Accounts/AccessDenies";
+                });
 
 //Adding Middleware
 var app = builder.Build();
@@ -20,6 +30,8 @@ app.UseStaticFiles();
 
 
 //app.MapDefaultControllerRoute();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute("home", pattern: "{controller=Employees}/{action=List}/{id?}");
 
