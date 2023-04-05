@@ -1,10 +1,43 @@
-﻿@model Employee
-
+﻿@model IEnumerable<Employee>
 @{
-
     ViewBag.Title = "Index";
-
 }
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(item=>item.FirstName)</th>
+            <th>@Html.DisplayNameFor(item=>item.LastName)</th>
+            <th>@Html.DisplayNameFor(item=>item.Gender)</th>
+            <th>@Html.DisplayNameFor(item=>item.Address)</th>
+            <th>@Html.DisplayNameFor(item=>item.DepartmentId)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model ?? Enumerable.Empty<Employee>())
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Gender</td>
+                <td>@item.Address</td>
+                <td>@item.DepartmentId</td>
+                <td>
+                    <a asp-action="Edit"
+                       asp-controller="Employees"
+                      asp-route-id="@item.EmpId">Edit</a>
+                      |
+                    <a asp-action="Details"
+                   asp-controller="Employees"
+                   asp-route-id="@item.EmpId">Details</a>
+                    |
+                    <a asp-action="Delete"
+                   asp-controller="Employees"
+                   asp-route-id="@item.EmpId">Delete</a>
+                </td>
+            </tr>
 
-
+        }
+    </tbody>
+   
+</table>
 

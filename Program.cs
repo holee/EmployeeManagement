@@ -7,7 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 //Adding Services
 
 builder.Services.AddControllersWithViews();
+
+
 builder.Services.AddScoped<DapperContext>();
+
+
+
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
